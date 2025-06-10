@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskFlow - Gestão de Tarefas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .task-input {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 20px;
+        }
+
+        .task-input input {
+            padding: 10px;
+            font-size: 16px;
+            background-color: #ffffff;
+            color: #333333;
+        }
+
+        .task-input button {
+            padding: 10px;
+            background-color: #28a745;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        .task-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .task-list li {
+            background-color: white;
+            margin: 10px 0;
+            padding: 15px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-radius: 4px;
+        }
+
+        .task-list li.completed {
+            text-decoration: line-through;
+            background-color: #d4edda;
+        }
+
+        .task-list button {
+            background-color: #dc3545;
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 5px 10px;
+            border-radius: 4px;
+        }
+
+        #feedback {
+            text-align: center;
+            margin-top: 10px;
+            color: #155724;
+        }
+    </style>
+</head>
+<body>
+    <h1>TaskFlow</h1>
+
+    <div class="task-input">
+        <input type="text" id="new-task" placeholder="Digite sua tarefa" aria-label="Campo para digitar nova tarefa" tabindex="0">
+        <button id="add-task" aria-label="Adicionar nova tarefa" tabindex="0">Adicionar Tarefa</button>
+    </div>
+
+    <ul class="task-list" id="task-list" role="list">
+        <!-- Tarefas serão adicionadas aqui -->
+    </ul>
+
+    <div id="feedback" aria-live="polite" style="visibility: hidden;">Tarefa adicionada!</div>
+
+    <script>
+        const taskInput = document.getElementById('new-task');
+        const addTaskButton = document.getElementById('add-task');
+        const taskList = document.getElementById('task-list');
+        const feedback = document.getElementById('feedback');
+
+        function addTask(taskText) {
+            const taskItem = document.createElement('li');
+            taskItem.setAttribute('role', 'listitem');
+            taskItem.innerHTML = `
+                <span>${taskText}</span>
+                <div>
+                    <button onclick="completeTask(this)" aria-label="Marcar tarefa como concluída">Concluir</button>
+                    <button onclick="removeTask(this)" aria-label="Excluir tarefa">Excluir</button>
+                </div>
+            `;
+            taskList.appendChild(taskItem);
+            feedback.style.visibility = 'visible';
+            feedback.textContent = 'Tarefa adicionada!';
+            setTimeout(() => {
+                feedback.style.visibility = 'hidden';
+            }, 2000);
+        }
+
+        function completeTask(button) {
+            const taskItem = button.parentElement.parentElement;
+            taskItem.classList.toggle('completed');
+        }
+
+        function removeTask(button) {
+            const taskItem = button.parentElement.parentElement;
+            taskList.removeChild(taskItem);
+            feedback.style.visibility = 'visible';
+            feedback.textContent = 'Tarefa removida!';
+            setTimeout(() => {
+                feedback.style.visibility = 'hidden';
+            }, 2000);
+        }
+
+        addTaskButton.addEventListener('click', () => {
+            const taskText = taskInput.value;
+            if (taskText) {
+                addTask(taskText);
+                taskInput.value = '';
+                taskInput.focus();
+            }
+        });
+
+        taskInput.addEventListener('keypress', (e) => {
+            if (e.key === 'Enter') {
+                addTaskButton.click();
+            }
+        });
+
+        document.addEventListener('keydown', function(event) {
+            if (event.ctrlKey && event.key === 'n') {
+                taskInput.focus();
+            }
+        });
+    </script>
+</body>
+</html>
