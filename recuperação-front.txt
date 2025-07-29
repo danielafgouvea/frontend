@@ -1,0 +1,40 @@
+1- O código abaixo foi implementado para alterar o texto de um parágrafo ao clicar
+em um botão. No entanto, ele não está funcionando corretamente.
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<title>Manipulação de Texto</title>
+</head>
+<body>
+<p id="mensagem">Texto original</p>
+<button id="alterar-texto">Alterar Texto</button>
+<script>
+const botao = document.querySelector('#alterar-texto');
+botao.addEventListener('click', () => {
+const paragrafo = document.getElementById('mensagem');
+paragrafo.text = 'Texto alterado!';
+});
+</script>
+</body>
+</html>
+Que modificação no código é necessária para corrigir o problema e garantir o
+funcionamento esperado da funcionalidade?
+A) Alterar document.querySelector('#alterar-texto') para
+document.getElementById('alterar-texto').
+B) Substituir paragrafo.text = 'Texto alterado!' por paragrafo.textContent =
+'Texto alterado!';.
+C) Trocar document.getElementById('mensagem') por
+document.querySelector('#mensagem').
+D) Mudar o evento de click para dblclick no método addEventListener.
+E) Remover a linha que seleciona o botão document.querySelector('#alterar-texto').
+
+
+
+2) 9- No desenvolvimento de um aplicativo voltado para a gestão de finanças pessoais,
+a equipe de design optou por criar protótipos antes de iniciar a programação final.
+Durante as reuniões com usuários, percebeu-se que a interface inicial dificultava a
+navegação entre as categorias de despesas. Após ajustes feitos com base no
+feedback recebido, o protótipo foi melhorado, resultando em um aumento na aceitação
+dos testes finais.
+Porque a prototipagem foi essencial nesse processo?
