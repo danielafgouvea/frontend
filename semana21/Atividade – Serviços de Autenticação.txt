@@ -1,0 +1,18 @@
+Atividade – Serviços de Autenticação e Monitoramento Contexto
+
+Imagine que você é parte da equipe de Segurança da Informação de uma escola que está migrando para um sistema online de notas e atividades. Esse sistema precisa garantir que:
+
+1) Somente usuários autorizados consigam acessar (professores, alunos e gestores).
+2) Haja monitoramento constante para identificar tentativas de invasão, acessos suspeitos ou falhas.
+
+
+Questão 1 – Autenticação
+Liste dois métodos de autenticação que poderiam ser usados nesse sistema e explique em poucas palavras como funcionam.
+ 
+Questão 2 – Monitoramento
+Explique por que o monitoramento é tão importante em um sistema escolar.
+ 
+Questão 3 – Cenário prático
+Um professor recebeu um e-mail dizendo para “clicar em um link e atualizar sua senha do sistema”.
+- O que pode estar acontecendo?
+- Que medidas de monitoramento poderiam detectar esse tipo de ataque?
