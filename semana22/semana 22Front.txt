@@ -1,0 +1,20 @@
+Responder as questões no bloco de notas (ou qualquer outro editor de texto) e deixar salvo. 
+No momento oportuno subimos no AVA na Semana 22.
+
+
+
+1. Explique o que é OAuth 2.0 e qual o seu papel em aplicações web modernas.
+
+2. Em uma aplicação que usa login via Google, o que é o client_id e por que ele é necessário?
+
+3. Descreva o fluxo básico de autenticação via Google OAuth em uma aplicação front-end. Liste os passos principais.
+
+4. O que é um token JWT (JSON Web Token)? Para que ele é utilizado após o login de um usuário?
+
+5. Depois que o usuário faz login com o Google, por que o front-end envia o token do Google para o back-end? O que o back-end faz com esse token?
+
+6. Onde e como o JWT gerado pelo back-end deve ser armazenado no front-end? Quais os cuidados que devem ser tomados?
+
+7. Quais são os riscos de segurança ao armazenar tokens de autenticação no localStorage? Que alternativas mais seguras existem?
+
+8. Por que é importante oferecer feedback visual (como mensagens de erro ou carregamento) ao usuário durante o processo de autenticação?
