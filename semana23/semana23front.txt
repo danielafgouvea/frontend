@@ -1,0 +1,9 @@
+
+1- Explique, com suas palavras, como a configuração de uma pipeline CI/CD contribui para a qualidade e a agilidade no desenvolvimento de software. Em sua resposta, destaque
+ a importância da automação de testes, do build e do deploy dentro do processo de integração e entrega contínua.
+
+2- Explique qual é o papel dos testes automatizados no desenvolvimento de software e compare como o Jest e o Cypress contribuem para garantir a qualidade das aplicações. Em sua resposta, destaque as
+ diferenças entre os tipos de testes que cada ferramenta realiza e a importância de usá-las de forma complementar.
+
+3- Explique como o uso do Docker e do Kubernetes contribui para a automação e eficiência do deploy contínuo em aplicações modernas. Em sua resposta, destaque a função de cada tecnologia e como elas
+ trabalham juntas para garantir escalabilidade, portabilidade e estabilidade no ambiente de produção.
