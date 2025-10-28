@@ -1,0 +1,10 @@
+Responda e depois subir as respostas para a semana 26 de Frontend.
+
+1) Explique, com suas palavras, qual é a importância de usar o Webpack no desenvolvimento de aplicações 
+web e como ele pode contribuir para melhorar o desempenho e a organização do código de um site.
+
+2) Explique, com suas palavras, como o uso do Gulp pode facilitar o trabalho de um desenvolvedor web e 
+de que forma a automatização de tarefas contribui para a produtividade e a qualidade de um projeto.
+
+3)Explique, com suas palavras, por que é importante usar ferramentas como o ESLint e o Prettier no 
+desenvolvimento de aplicações web e como elas ajudam na qualidade e na colaboração entre os desenvolvedores.
