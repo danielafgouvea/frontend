@@ -1,0 +1,11 @@
+Responda as perguntas e postar a atividade na semana 27 de frontend:
+
+Explique o que é o Firebase e cite duas de suas principais funcionalidades.
+
+Qual é a utilidade da API do Google Maps em aplicações web e como ela pode melhorar a experiência do usuário?
+
+O que significa CI/CD e por que essa prática é importante no desenvolvimento de software moderno?
+
+Descreva como o GitHub Actions pode ser usado para automatizar o processo de deploy de uma aplicação.
+
+Dê um exemplo de como a integração de um serviço externo (como Firebase ou Google Maps) e um pipeline de CI/CD podem trabalhar juntos em um mesmo projeto.
