@@ -1,0 +1,15 @@
+Responda e suba as respostas para semana 28 de frontend.
+
+1- O que são testes end-to-end (E2E) e qual é o principal objetivo desse tipo de teste em uma aplicação?
+
+2- Como o New Relic contribui para o monitoramento de performance e a melhoria da experiência do usuário?
+
+3- Explique a importância do logging no diagnóstico e na correção de erros em sistemas.
+
+4- Por que é essencial integrar testes, monitoramento e logging em projetos com esteiras de entrega contínua (CI/CD)?
+
+5- Cite uma ferramenta usada em cada etapa:
+
+a) Testes E2E
+b) Monitoramento de performance
+c) Análise de erros
